@@ -30,7 +30,7 @@ git commit -m 'nginx dockerfile'
 git push
 ```
 
-#### 결과
+#### 6.결과
 ```
 riwoo@Riwoos-MacBook msa_exer1 % docker build -t riwooz/nginx .
 Sending build context to Docker daemon  90.62kB
@@ -54,6 +54,6 @@ riwoo@Riwoos-MacBook msa_exer1 % docker ps -a |grep riwooz/nginx
 eb1d898eabb4        riwooz/nginx           "nginx -g 'daemon of…"   13 seconds ago      Up 12 seconds                                    n1
 ```
 
-#### nginx Webpage
+#### 7.nginx Webpage
 ![nginx running](https://github.com/riwooz/msa_exer1/blob/master/docker_nginx_running.png)
 
