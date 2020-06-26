@@ -32,7 +32,7 @@ git push
 ```
 
 #### 6.결과
-```
+``` shell
 riwoo@Riwoos-MacBook msa_exer1 % docker build -t riwooz/nginx .
 Sending build context to Docker daemon  90.62kB
 Step 1/4 : from ubuntu
