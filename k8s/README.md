@@ -54,4 +54,4 @@ NAME      TYPE       CLUSTER-IP     EXTERNAL-IP   PORT(S)        AGE
 mynginx   NodePort   10.104.185.2   <none>        80:32249/TCP   8s
 ```
 
-[!nginx running](https://github.com/riwooz/msa_exer1/blob/master/k8s/nginx_running.png)
+![nginx running](https://github.com/riwooz/msa_exer1/blob/master/k8s/nginx_running.png)
