@@ -51,6 +51,7 @@ Successfully tagged riwooz/nginx:latest
 
 riwoo@Riwoos-MacBook msa_exer1 % docker run -id --name n1 -p 8888:80 riwooz/nginx
 cbd4578f7d1acbe639babb8ca1d89a07920fa6e1043b3a31fbb04f168a077c04
+
 riwoo@Riwoos-MacBook msa_exer1 % docker ps -a |grep riwooz
 cbd4578f7d1a        riwooz/nginx           "nginx -g 'daemon of…"   13 seconds ago      Up 12 seconds               0.0.0.0:8888->80/tcp   n1
 ```
