@@ -14,7 +14,7 @@ kubectl expose deploy/mynginx --type="NodePort" --port 80
 kubectl scale deploy mynginx --replicas=20
 ```
 
-#### 결과
+#### 4.결과
 ```
 riwoo@Riwoos-MacBook k8s % sh k8s.sh
 kubectl run --generator=deployment/apps.v1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
@@ -54,5 +54,5 @@ NAME      TYPE       CLUSTER-IP     EXTERNAL-IP   PORT(S)        AGE
 mynginx   NodePort   10.104.185.2   <none>        80:32249/TCP   8s
 ```
 
-#### nginx Webpage
+#### 5.nginx Webpage
 ![nginx running](https://github.com/riwooz/msa_exer1/blob/master/k8s/nginx_running.png)
