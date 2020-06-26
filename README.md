@@ -48,7 +48,8 @@ Step 4/4 : CMD ["nginx", "-g", "daemon off;"]
 Successfully built acd43e9a135b
 Successfully tagged riwooz/nginx:latest
 
-riwoo@Riwoos-MacBook msa_exer1 % docker run -it --name n1 riwooz/nginx &
+riwoo@Riwoos-MacBook msa_exer1 % docker run -i --name n1 -p 8888:80 riwooz/nginx &
+[1] 11785
 riwoo@Riwoos-MacBook msa_exer1 % docker ps -a |grep riwooz/nginx
 eb1d898eabb4        riwooz/nginx           "nginx -g 'daemon of…"   13 seconds ago      Up 12 seconds                                    n1
 
