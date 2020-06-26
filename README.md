@@ -29,3 +29,28 @@ git add Dockerfile
 git commit -m 'nginx dockerfile'
 git push
 ```
+
+#### 결과
+```
+riwoo@Riwoos-MacBook msa_exer1 % docker build -t riwooz/nginx .
+Sending build context to Docker daemon  90.62kB
+Step 1/4 : from ubuntu
+ ---> 74435f89ab78
+Step 2/4 : RUN apt update
+ ---> Using cache
+ ---> 86fcda7b2389
+Step 3/4 : RUN apt install -y nginx
+ ---> Using cache
+ ---> cf78369655e3
+Step 4/4 : CMD ["nginx", "-g", "daemon off;"]
+ ---> Using cache
+ ---> acd43e9a135b
+Successfully built acd43e9a135b
+Successfully tagged riwooz/nginx:latest
+
+riwoo@Riwoos-MacBook msa_exer1 % docker run -it --name n1 riwooz/nginx &
+riwoo@Riwoos-MacBook msa_exer1 % docker ps -a |grep riwooz/nginx
+eb1d898eabb4        riwooz/nginx           "nginx -g 'daemon of…"   13 seconds ago      Up 12 seconds                                    n1
+
+
+
